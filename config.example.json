@@ -1,0 +1,9 @@
+{
+  "model_notes": "Ejemplo: describe tu modelo aquí (ej. ROG Zephyrus G14, multizona)",
+  "commands": {
+    "static_color": ["asusctl", "aura", "effect", "static", "--colour", "{color}"],
+    "keyboard_brightness": ["asusctl", "leds", "set", "{level}"],
+    "power_off": ["asusctl", "aura", "effect", "static", "--colour", "000000"]
+  },
+  "brightness_sysfs_fallback": "/sys/class/leds/asus::kbd_backlight/brightness"
+}

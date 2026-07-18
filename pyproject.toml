@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tuf-aura-control"
+version = "1.0.0"
+description = "Panel de control RGB para laptops ASUS TUF/ROG en Linux"
+readme = "README.md"
+authors = [
+    { name = "Joel25T" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: X11 Applications :: GTK",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Joel25T/tuf-aura-control"
+Repository = "https://github.com/Joel25T/tuf-aura-control"
+
+[project.scripts]
+tuf-aura-control = "tuf_aura_control.__main__:main"
+
+[tool.setuptools]
+packages = ["tuf_aura_control"]

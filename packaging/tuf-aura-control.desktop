@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=TUF Aura Control
+Comment=Control de iluminación RGB para portátiles ASUS TUF/ROG
+Exec=tuf-aura-control
+Icon=input-keyboard
+Terminal=false
+Categories=Utility;HardwareSettings;

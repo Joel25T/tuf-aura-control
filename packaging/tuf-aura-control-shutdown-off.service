@@ -1,0 +1,16 @@
+[Unit]
+Description=Apaga el RGB del teclado TUF/ROG antes de apagar/reiniciar
+DefaultDependencies=no
+Before=shutdown.target reboot.target halt.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# No hace nada al iniciar — el efecto real ocurre en ExecStop, que systemd
+# ejecuta cuando el servicio se detiene, lo cual pasa justo antes de que
+# el sistema se apague o reinicie.
+ExecStart=/bin/true
+ExecStop=/usr/bin/asusctl aura effect static --colour 000000
+
+[Install]
+WantedBy=multi-user.target
